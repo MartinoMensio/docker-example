@@ -1,4 +1,6 @@
-# Concepts
+# Docker example
+
+Clone this repository on your machine, then cd in this folder and execute the commands.
 
 ## Docker image
 
@@ -65,3 +67,5 @@ But one comes from the definition of the image, and the other from a volume:
 - if you now modify requirements.txt inside the container, this modification will disappear as soon as you shut down the container. If you modify requirements.txt outside the container, the container still has the same old version, so you need to recreate the image again.
 - if instead you create or modify or delete files from the shared folder, the changes will also exist outside the container and will remain modified. That's why you need to use volumes for folders that you plan to modify (from the inside or from the outside).
 
+
+Try to modify or add files in the shared_folder and you will see that the shared folder works.
