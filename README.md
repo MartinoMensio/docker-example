@@ -14,6 +14,7 @@ To build a custom image you can use this command (together with the Dockerfile p
 ```bash
 
 # Build a docker image
+# . means that docker will build an image from the current directory (location of the Dockerfile)
 # -t TAG-NAME is used to give the image a name
 docker build . -t docker-example
 ```
